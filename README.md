@@ -3,7 +3,7 @@
 Jay is an experimental command-line tool for preparing programming contest problems and stress-testing solutions.
 
 Currently it only handles test data preparation and single-test level evaluation,
-but the end goal of the project is to create a lightweight modern replacement for [polygon](polygon.codeforces.com/)
+but the end goal of the project is to create a lightweight modern replacement for [polygon](https://polygon.codeforces.com/)
 and core parts of [ejudge](https://github.com/blackav/ejudge) that could be used by both contestants and problemsetters.
 
 It is named after [John Jay](https://en.wikipedia.org/wiki/John_Jay) (1745–1829), the first US Chief Justice.
@@ -41,7 +41,7 @@ Jay is language-agnostic; "source string" for each executable can be one of the 
 * Run command. String that specifies how to compile & run it: `go run d.go`, `node solution.js`
 * Compile command. It should contain `@` symbol that will be replaced with tempfile for output binary: `g++ f.cpp --std=c++17 -o @`
 
-If tests directory is specified, every file inside it will be treated as a test case with files with an `.a` extension considered reference answers (you do not always have to have it). You can also parse sample cases from online judges: `jay parse [url] [path]`. The parser is quite stupid: it just looks for <pre> tags and copies odd ones as inputs and even ones as oututs. This works for CodeForces, Yandex.Contest and few other judges.
+If tests directory is specified, every file inside it will be treated as a test case with files with an `.a` extension considered reference answers (you do not always have to have it). You can also parse sample cases from online judges: `jay parse [url] [path]`. The parser is quite stupid: it just looks for `<pre>` tags and copies odd ones as inputs and even ones as oututs. This works for CodeForces, Yandex.Contest and few other judges.
 
 TODO: figure out how to parse NEERC-style PDFs
 
