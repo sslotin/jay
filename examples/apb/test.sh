@@ -1,0 +1,1 @@
+jay test solution.cpp -r "ghc reference.hs -o @" -g generator.py

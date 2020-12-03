@@ -1,0 +1,1 @@
+jay test solution.py -i interactor.py

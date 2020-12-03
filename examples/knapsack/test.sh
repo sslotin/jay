@@ -1,0 +1,1 @@
+time jay test solution.cpp -c checker.py -g generator.py -n 25 --time-limit 1s
