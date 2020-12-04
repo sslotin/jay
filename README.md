@@ -2,8 +2,7 @@
 
 Jay is an experimental command-line tool for preparing programming contest problems and stress-testing solutions.
 
-Currently it only handles test data preparation and single-test level evaluation,
-but the end goal of the project is to create a lightweight modern replacement for [polygon](https://polygon.codeforces.com/)
+The end goal of the project is to create a lightweight modern replacement for [polygon](https://polygon.codeforces.com/)
 and core parts of [ejudge](https://github.com/blackav/ejudge) that could be used by both contestants and problemsetters.
 
 It is named after [John Jay](https://en.wikipedia.org/wiki/John_Jay) (1745–1829), the first US Chief Justice.
@@ -11,14 +10,11 @@ It is named after [John Jay](https://en.wikipedia.org/wiki/John_Jay) (1745–182
 ## Install
 
 ```bash
-git clone github.com/sslotin/jay
-cd jay
-go install
-# or "sudo GOBIN=/usr/local/bin/ go install" on Linux to put it in path right away
+go get github.com/sslotin/jay
+# you may want to prefix it with "sudo GOBIN=/usr/local/bin/" on Linux to put it in path right away
 ```
 
-Jay is supposed to be cross-platform, but it currently relies on a few Unix utilities,
-so some parts may not work on Windows yet (this is WIP).
+Jay currently relies on a few Unix utilities, so some parts may not work on Windows yet, but it will be made cross-platform soon.
 
 TODO: make it installable with a single `snap`, `brew` and whatever it is that Windows users feel comfortable with.
 
